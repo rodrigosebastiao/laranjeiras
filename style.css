@@ -1,0 +1,619 @@
+body{
+    margin: 0;
+    height: 100%;
+    font-family: Raleway;
+}
+
+#top,
+#nav-bar,
+#main-banner,
+#banner-sapatos,
+#news-loja,
+#quem-somos,
+#cadastre-se,
+#blog,
+footer{
+    max-width: 1366px;/*70%*/
+    min-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;    
+}
+
+#top{
+    background-color: #fbfbfb;
+    padding-top: 10px;
+    height: 72px;
+}
+
+#top .search,
+#top .logo{
+    float: left;
+}
+
+.search{
+    width: 25%;
+    margin-right: 10%;
+    height: 52px;
+    padding: 0 1.6%;
+}
+
+.search form{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.search-input{
+    background-color: #fbfbfb;
+    border: 0;
+    width: 90%;
+    height: 100%;
+}
+
+.search-input::placeholder{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.1875em;
+    text-align: center;
+}
+
+button.magnifier{
+    background: url(images/magnifier.png) no-repeat;
+    width: 20px;
+    height: 27px;
+    border: 0;
+}
+
+.logo{
+    margin: 0 auto;
+    width: 12%;/*305px*/
+    margin-right: 21%;/*215px*/
+}
+
+.logo img{
+    width: auto;
+    height: 55px;
+}
+
+.bottle img{
+    width: 19px;
+    height: 28px;
+}
+
+.car{
+    position: relative;
+}
+
+.car img{
+    width: 26px;
+    height: 26px;
+}
+
+.user-area{
+    width: 330px;
+    float: right;
+}
+
+.account,
+.cart{
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.account a,
+.cart a{
+    text-decoration: none;
+    color: #036932;
+}
+
+.user-account,
+.p-cart{
+    font-weight: 900;
+}
+
+.account,
+.cart{
+    float: left;
+    margin-right: 9%;
+}
+
+.account{
+    width: 150px;
+}
+
+.bottle{
+    float: left;
+}
+
+.account-group{
+    float: right;
+}
+
+#qtd-circle{
+    position: absolute;
+    display: inline-block;
+    background:#036932;
+    width: 18px;
+    height: 18px;
+    left: 21px;
+    top: 6px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+}
+
+#qtd-circle a{
+    color: #ffffff;
+}
+
+.cart{
+    width: 120px;
+}
+
+.car{
+    float: left;
+}
+
+.cart-group{
+    float: right;
+}
+
+.account-group,
+.cart-group{
+    line-height: 3px;
+}
+
+.bottle,
+.car{
+    padding-top: 5px;
+}
+
+
+#nav-bar ul{
+    list-style: none;
+    text-align: center;
+}
+
+#nav-bar ul li{
+    display: inline;
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#nav-bar ul li a{
+    text-decoration: none;
+    color: #757575;
+}
+
+#nav-bar ul li img{
+    vertical-align: -5px;
+}
+
+#top,
+#nav-bar{
+    border-bottom: solid 2px #f5f5f5;
+}
+
+#main-banner{
+    width: 100%;
+    height: 456px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 456px;
+}
+
+ .carrossel .slide{
+    display: inline-block;
+    width: 1366px;
+    height: 456px;
+}
+
+.slide img{
+    width: 1366px;
+    height: 456px;
+}
+
+
+.prev,
+.next{
+    cursor: pointer;
+    position: absolute;
+    background: url(images/arrow.png) no-repeat 0 50%;
+    width: 30px;
+    height: 100%;
+    z-index: 1;
+}
+
+.prev{
+    left: 0;
+    transform: scale(-1, 1);
+}
+
+.next{
+    right: 0;
+}
+
+.promocional{
+    text-align: center;
+    padding: 18px 0;
+}
+
+.promocional ul{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+.promocional ul li {
+    display: inline;
+    margin-right: 6%; /*85px*/
+    font-size: 14;
+    font-weight: 800;
+}
+
+.promocional ul li span{
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.promocional a{
+    text-decoration: none;
+    color: #757575;
+}
+
+.sapatos{
+    height: 369px;
+    position: relative;
+}
+
+.boys,
+.girls{
+    width: 50%; /*673px*/
+    height: 369px;
+    position: relative;
+}
+
+.boys{
+    background: url(images/boys.png) no-repeat;
+    background-size: contain;
+    float: left;
+}
+
+.girls{
+    background: url(images/girls.png) no-repeat;
+    background-size: contain;
+    float: right;
+}
+
+.boys p,
+.girls p{
+    position: absolute;
+    width: 275px;
+    bottom: 0;
+    right: 0;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2.1px;
+    color: #ffffff; 
+}
+
+.boys p span,
+.girls p span{
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.carrossel-marcas{
+    width: 100%;
+    height: 70px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.carrossel-logos{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.carrossel-logos div{
+    float: left;
+    margin: 20px 3.4% 0 3.4%;
+}
+
+#news-loja{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#news-loja h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3.5px;
+}
+
+.items .produto{
+    float: left;
+    width: 33%;/*455px*/
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.img-produto{
+    height: 365px;
+}
+
+.desc-produto{
+    margin: 0 auto;
+    width: 159px;
+}
+
+.titulo-produto{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.preco-parcela{
+    text-transform: uppercase;
+    color:#f68022;
+}
+
+.preco-parcela span{
+    font-weight: 800;
+}
+
+.clear{
+    clear: both;
+}
+
+
+#quem-somos{
+    position: relative;
+    height: 510px;
+}
+
+.quem-somos-imagem{
+    position: absolute;
+    width: 100%;
+}
+
+.quem-somos-imagem img{
+    width: 100%;
+}
+
+.quem-somos-texto{
+    position: absolute;
+    left: 55%;
+    width: 430px;
+    height: 233px;
+}
+
+.quem-somos-texto a{
+    text-decoration: none;
+    color: #757575;
+}
+
+.quem-somos-texto h2{
+    font-family: "Reenie Beanie";
+    font-size: 58px;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    line-height: 20px;
+}
+
+.quem-somos-texto p{
+    font-size: 13px;
+    letter-spacing: 2.3px;
+}
+
+#cadastre-se{
+    margin-bottom: 20px;
+}
+
+#cadastre-se .wrap{
+    max-width: 1310px;
+    margin: 0 auto;
+}
+
+.wrap > div{
+    display: inline-block;
+}
+
+.offer a{
+    text-decoration: none;
+}
+
+.offer p{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 0.9375em;
+    letter-spacing: 0.15em;
+    color: #757575;
+}
+
+.offer p b{
+    font-weight: 700;
+    color: #f68022;
+    font-size: 1.7em;
+}
+
+.offer p span{
+    font-weight: initial;
+    color: #f68022;
+    font-size: 1.3125em;
+}
+
+.cadastro{
+    width: 781px;
+}
+
+.cadastro .nome{
+    width: 318px;
+    height:37px;
+}
+
+.cadastro .email{
+    width: 318px;
+    height: 37px;
+}
+
+.cadastro button.enviar{
+    width: 122px;
+    height: 41px;
+    background-color: #8abc00;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 0;
+}
+
+.cadastro input::placeholder{
+    text-transform: uppercase;
+    text-indent: 10px;
+    color: #757575;
+}
+
+.disc{
+    text-align: center;
+    font-size: 12px;
+}
+
+.disc a{
+    text-decoration: none;
+    color: #757575;
+}
+
+
+#blog{
+    margin: 40px auto;
+    height: 310px;
+}
+
+.blog-left,
+.blog-right{
+    width: 673px;
+    height: 310px;
+}
+
+.blog-left{
+    background: url(images/batizado.png);
+    background-size: contain;
+    float: left;
+    position: relative;
+}
+
+.blog-left .button{
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
+    padding: 10px 14px;
+    border: solid 2px #a67d30;
+    color: #a67d30;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.3em;
+}
+
+.blog-right{
+    float: right;
+}
+
+footer{
+    height: 351px;
+    font-size: 14px;
+    line-height: 25px;
+    color:#757575;
+}
+
+.institucional{
+    background: #f6f6f6;
+    height: 267px;
+    padding: 20px 20px 0 20px;
+}
+
+.f-col {
+    float: left;
+    height: 100%;
+    position: relative;
+}
+
+.f-col ul{
+    overflow: hidden;
+}
+
+.f-col.col-1{
+    width: 13%;
+}
+
+.f-col.col-2{
+    width: 28%;
+}
+
+.f-col.col-3{
+    width: 33.33%;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h3.siga{
+    line-height: 0;
+}
+
+ul.rede-social li{
+    display: inline;
+}
+
+.f-col.col-2 .foto,
+.f-col.col-3 .foto{
+    float: left;
+    width: 200px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.f-col.col-2 .foto img,
+.f-col.col-3 .foto img{
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #757575;
+}
+
+small{
+    padding: 5px;
+}
+
+small p{
+    line-height: 10px;
+    padding-left: 20px;
+}
+
+
+@media screen and(max-width:1200px){
+    
+}
+
+@media screen and(max-width:992px){
+    
+}
