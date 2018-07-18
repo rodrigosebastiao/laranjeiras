@@ -1,2 +1,2 @@
 # laranjeiras
-desafio laranjeiras
+Excução do desafio do layout laranjeiras
